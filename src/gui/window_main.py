@@ -34,7 +34,7 @@ from PyQt4 import uic
 from PyQt4.QtGui import * 
 from PyQt4.QtCore import * 
 
-from def_tools_gui import *
+#from def_tools_gui import *
 from src.core.def_tools import keys_sorted, num2str
 
 from def_dialog import common
