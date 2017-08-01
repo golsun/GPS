@@ -11,7 +11,7 @@ from PyQt4 import uic
 from PyQt4.QtGui import * 
 from PyQt4.QtCore import * 
 
-from def_tools_gui import *
+#from def_tools_gui import *
 from src.core.def_tools import keys_sorted
 from src.ct.ck2cti_GPS import ck2cti
 
