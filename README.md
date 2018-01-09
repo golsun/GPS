@@ -14,9 +14,11 @@ To run GPS, one needs to store the following python packages
 * cantera
 
 then GPS can be started by typing the following commands in terminal
+
 cd [the path of GPS folder]
 python GPS.py
 
+for more detailed tutorial, please see [Tutorial_v1.0.0.pdf]
 
 ## How to cite
 * X. Gao, S. Yang, W. Sun, A global pathway selection algorithm for the reduction of detailed chemical kinetic mechanisms, Combustion and Flame, 167 (2016) 238–247
