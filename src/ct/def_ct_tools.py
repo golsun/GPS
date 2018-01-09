@@ -105,6 +105,14 @@ def Xstr(gas, fuel_dict, phi, oxid_dict):
 			O_oxid = O_oxid + atoms['O'] * val
 		if 'o' in atoms.keys():
 			O_oxid = O_oxid + atoms['o'] * val
+		if 'C' in atoms.keys():
+			O_oxid -= atoms['C'] * val * 2
+		if 'c' in atoms.keys():
+			O_oxid -= atoms['c'] * val * 2
+		if 'H' in atoms.keys():
+			O_oxid -= atoms['H'] * val * 0.5
+		if 'h' in atoms.keys():
+			O_oxid -= atoms['h'] * val * 0.5
 
 
 	O_stoic = C_fuel * 2.0 + H_fuel / 2.0 - O_fuel

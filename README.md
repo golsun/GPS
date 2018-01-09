@@ -6,6 +6,18 @@ To improve the accuracy of reduced mechanisms, GPS considers all-generation rela
 
 This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech (http://sun.gatech.edu/)
 
+## How to use
+
+To run GPS, one needs to store the following python packages
+* networkx
+* PyQt4 
+* cantera
+
+then GPS can be started by typing the following commands in terminal
+cd [the path of GPS folder]
+python GPS.py
+
+
 ## How to cite
 * X. Gao, S. Yang, W. Sun, A global pathway selection algorithm for the reduction of detailed chemical kinetic mechanisms, Combustion and Flame, 167 (2016) 238–247
 

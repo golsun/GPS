@@ -126,7 +126,7 @@ def senkin(soln, atm, T0, X0, if_half=True, dir_raw=None, if_fine=False):
 				# decide if tried t is proper -------
 				
 				dT = abs(T - T_prev)
-				if dT > max_dT or (if_half and T-T0>404):
+				if dT > max_dT or (if_half and T-T0>dT_ign+4):
 					# if dT is too large, this t is not okay, decrease time step and start over
 					t = t_prev
 					dt /= 2.0
@@ -136,9 +136,9 @@ def senkin(soln, atm, T0, X0, if_half=True, dir_raw=None, if_fine=False):
 				
 				else:
 					# if dT is too small, this t is okay, we increase time step for next t
-					if (soln.T - T0 < 400 and dT < 10):
+					if (soln.T - T0 < dT_ign and dT < 10):
 						dt *= 2.0
-					if (soln.T - T0 >= 400 and dT < 50):
+					if (soln.T - T0 >= dT_ign and dT < 50):
 						dt *= 5.0
 					break
 
@@ -151,7 +151,7 @@ def senkin(soln, atm, T0, X0, if_half=True, dir_raw=None, if_fine=False):
 					tau_ign = t
 					break
 			else:
-				if soln.T - T0 > 1000 and dT < 1:
+				if soln.T - T0 > 1500 and dT < 1:
 					print 'equilibrium reached'
 					break
 
@@ -170,7 +170,7 @@ def senkin(soln, atm, T0, X0, if_half=True, dir_raw=None, if_fine=False):
 		save_raw_csv(raw, soln, dir_raw)
 
 
-	return raw
+	return raw#['axis0'][-1]
 
 
 def test_senkin():
