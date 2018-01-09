@@ -14,9 +14,8 @@ To run GPS, one needs to store the following python packages
 * cantera
 
 then GPS can be started by typing the following commands in terminal
-
-cd [the path of GPS folder]
-python GPS.py
+* cd [the path of GPS folder]
+* python GPS.py
 
 for more detailed tutorial, please see [Tutorial_v1.0.0.pdf]
 
