@@ -4,23 +4,29 @@ Global Pathway Selection (GPS) is an algorithm that effectively generates reduce
 
 To improve the accuracy of reduced mechanisms, GPS considers all-generation relation between species, and minimizes the risk of broken pathway or dead-end issue. 
 
-This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech (http://sun.gatech.edu/)
+This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech [link](http://sun.gatech.edu/)
 
 ## How to use
 
-To run GPS, one needs to store the following python packages
+This repo is developed with Python 2.7, and dependent on many packages. The easiest way is to install them with an the [Anaconda](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment file:
+
+    conda env create -f environment.yml
+
+You can also install the dependencies mannually. Besides common packages such as numpy, matplotlib, and scipy, and pandas, to run GPS, one needs to store the following python packages
 * networkx (v1.10)
-* PyQt4 (v2.2.0)
-* cantera (v4.11.4)
+* PyQt4
+* cantera
 
 then GPS can be started by typing the following commands in terminal
-* cd [the path of GPS folder]
-* python GPS.py
 
-for more detailed tutorial, please see [Tutorial_v1.0.0.pdf]
+    cd [the path of GPS folder]
+    python GPS.py
+
+
+for more detailed tutorial, please see [Tutorial_v1.0.0.pdf](https://github.com/golsun/GPS/blob/master/Tutorial_v1.0.0.pdf)
 
 ## How to cite
-* X. Gao, S. Yang, W. Sun, A global pathway selection algorithm for the reduction of detailed chemical kinetic mechanisms, Combustion and Flame, 167 (2016) 238–247
+* X. Gao, S. Yang, W. Sun, A global pathway selection algorithm for the reduction of detailed chemical kinetic mechanisms, Combustion and Flame, 167 (2016) 238–247 [link](https://www.sciencedirect.com/science/article/pii/S0010218016000638)
 
 ## Related publication
 * X. Gao, W. Sun, Using Global Pathway Selection Method to Understand Chemical Kinetics, 55th AIAA Aerospace Sciences Meeting, (2017) AIAA 2017-0836.
