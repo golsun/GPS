@@ -8,7 +8,7 @@ This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech [link](
 
 ## How to use
 
-This repo is developed with Python 2.7, and dependent on many packages. The easiest way is to install them with an the [Anaconda](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment file:
+This repo is developed with Python 2.7, and dependent on many packages. The easiest way is to install them with an the [Anaconda](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment file, [environment.yml](https://github.com/golsun/GPS/blob/master/environment.yml):
 
     conda env create -f environment.yml
 
