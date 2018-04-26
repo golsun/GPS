@@ -9,9 +9,9 @@ This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech (http:/
 ## How to use
 
 To run GPS, one needs to store the following python packages
-* networkx
-* PyQt4 
-* cantera
+* networkx (v1.10)
+* PyQt4 (v2.2.0)
+* cantera (v4.11.4)
 
 then GPS can be started by typing the following commands in terminal
 * cd [the path of GPS folder]
