@@ -10,7 +10,7 @@ import numpy as np
 
 
 def shorten_GP_name(GP_name):
-	s = GP_name.replace(' ','').replace('-->','>')
+	s = GP_name.replace(' ','').replace('-->','-')
 	return s
 
 
