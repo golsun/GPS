@@ -1,52 +1,50 @@
-name: GPS
+name: gps
 channels:
   - cantera
   - defaults
 dependencies:
-  - cantera=2.3.0=np113py27_2
-  - backports=1.0=py27hb4f9756_1
+  - cantera=2.3.0=np111py27_2
+  - backports=1.0=py27h6492d98_1
   - backports.functools_lru_cache=1.5=py27_1
-  - backports_abc=0.5=py27h6972548_0
+  - backports_abc=0.5=py27h0ec6b72_0
   - ca-certificates=2018.03.07=0
   - certifi=2018.4.16=py27_0
-  - cycler=0.10.0=py27hfc73c78_0
+  - cycler=0.10.0=py27h59acbbf_0
   - decorator=4.3.0=py27_0
-  - freetype=2.8=h12048fb_1
-  - functools32=3.2.3.2=py27h8ceab06_1
-  - futures=3.2.0=py27h1b80678_0
+  - freetype=2.8=hea645e0_1
+  - functools32=3.2.3.2=py27h0cdbcdb_1
+  - futures=3.2.0=py27h8b2aecd_0
+  - icc_rt=2017.0.4=h97af966_0
+  - icu=58.2=h2aa20d9_1
   - intel-openmp=2018.0.0=8
-  - kiwisolver=1.0.1=py27h9856860_0
-  - libcxx=4.0.1=h579ed51_0
-  - libcxxabi=4.0.1=hebd6815_0
-  - libedit=3.1=hb4e282d_0
-  - libffi=3.2.1=h475c297_4
-  - libgfortran=3.0.1=h93005f0_2
-  - libpng=1.6.34=he12f830_0
-  - matplotlib=2.2.2=py27ha7267d0_0
+  - jpeg=8d=vc9_2
+  - kiwisolver=1.0.1=py27h9815e84_0
+  - libpng=1.6.34=h325896a_0
+  - libtiff=4.0.6=vc9_2
+  - matplotlib=1.5.1=np111py27_0
   - mkl=2018.0.2=1
-  - mkl_fft=1.0.1=py27h917ab60_0
-  - mkl_random=1.0.1=py27h78cc56f_0
-  - ncurses=6.0=hd04f020_2
+  - mkl_fft=1.0.1=py27hc997a72_0
   - networkx=1.10=py27_0
-  - numpy=1.13.3=py27ha9ae307_4
-  - openssl=1.0.2o=h26aff7b_0
-  - pip=9.0.3=py27_0
-  - pyparsing=2.2.0=py27h5bb6aaf_0
-  - pyqt=4.11.4=py27_4
-  - python=2.7.14=h138c1fe_31
+  - numpy=1.11.3=py27hfef472a_4
+  - openssl=1.0.2o=h2c51139_0
+  - pip=10.0.1=py27_0
+  - pyparsing=2.2.0=py27hc7d9fa6_1
+  - pyqt=4.11.4=py27_7
+  - python=2.7.15=he216670_0
   - python-dateutil=2.7.2=py27_0
   - pytz=2018.4=py27_0
-  - qt=4.8.7=4
-  - readline=7.0=hc1231fa_4
-  - scipy=1.0.1=py27hcaad992_0
-  - setuptools=39.0.1=py27_0
-  - singledispatch=3.4.0.3=py27he22c18d_0
+  - qt=4.8.7=vc9_9
+  - scipy=1.0.1=py27hffc5294_0
+  - setuptools=39.1.0=py27_0
+  - singledispatch=3.4.0.3=py27h3f9d112_0
   - sip=4.18=py27_0
-  - six=1.11.0=py27h7252ba3_1
-  - sqlite=3.23.1=hf1716c9_0
-  - subprocess32=3.2.7=py27h24b2887_0
-  - tk=8.6.7=h35a86e2_3
+  - six=1.11.0=py27ha5e1701_1
+  - sqlite=3.23.1=h0f31022_0
+  - tk=8.5.18=vc9_0
   - tornado=5.0.2=py27_0
+  - vc=9=h7299396_1
+  - vs2008_runtime=9.00.30729.1=hfaea7d5_1
+  - vs2015_runtime=14.0.25123=3
   - wheel=0.31.0=py27_0
-  - zlib=1.2.11=hf3cbc9b_2
-prefix: /anaconda3/envs/GPS
+  - wincertstore=0.2=py27hf04cefb_0
+  - zlib=1.2.11=hbc2faf4_2
