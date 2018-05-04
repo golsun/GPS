@@ -10,7 +10,7 @@ This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech [link](
 
 This repo is developed with Python 2.7, and dependent on many packages. The easiest way is to install them with an the [Anaconda](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment file, [environment.yml](https://github.com/golsun/GPS/blob/master/environment.yml):
 
-    conda env create -f environment.yml
+    conda create -f environment.yml python=2.7
 
 You can also install the dependencies mannually. Besides common packages such as numpy, matplotlib, and scipy, and pandas, to run GPS, one needs to store the following python packages
 * networkx (v1.10)
