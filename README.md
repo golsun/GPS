@@ -12,11 +12,6 @@ This repo is developed with Python 2.7, and dependent on many packages. The easi
 
     conda create -f environment.yml python=2.7
 
-You can also install the dependencies mannually. Besides common packages such as numpy, matplotlib, and scipy, and pandas, to run GPS, one needs to store the following python packages
-* networkx (v1.10)
-* PyQt4
-* cantera
-
 then GPS can be started by typing the following commands in terminal
 
     cd [the path of GPS folder]
