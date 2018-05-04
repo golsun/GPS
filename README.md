@@ -15,7 +15,6 @@ This repo is developed with Python 2.7, and dependent on many packages. The easi
 
 then GPS can be started by typing the following commands in terminal
 
-    cd [the path of GPS folder]
     python GPS.py
 
 
