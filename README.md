@@ -1,10 +1,10 @@
 # GPS
 
-Global Pathway Selection (GPS) is an algorithm that effectively generates reduced (skeletal) chemistry mechanisms, ​which speeds up your simulations. You can also use it as a systematic analytics tool to extract insights from complex reacting system.
+Global Pathway Selection (GPS, [paper](https://www.sciencedirect.com/science/article/pii/S0010218016000638)) is an algorithm that effectively generates reduced (skeletal) chemistry mechanisms, ​which speeds up your simulations. You can also use it as a systematic analytics tool to extract insights from complex reacting system.
 
 To improve the accuracy of reduced mechanisms, GPS considers all-generation relation between species, and minimizes the risk of broken pathway or dead-end issue. 
 
-This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech [link](http://sun.gatech.edu/), published on Combustion and Flame [(paper)](https://www.sciencedirect.com/science/article/pii/S0010218016000638)
+This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech [link](http://sun.gatech.edu/), published on Combustion and Flame 
 
 ## How to use
 
