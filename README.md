@@ -11,7 +11,7 @@ This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech [[link]
 This repo is developed with Python 2.7 and based on many packages. The easiest way is to install them with the [Anaconda](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment file, [environment.yml](https://github.com/golsun/GPS/blob/master/environment.yml):
 
     cd [the path of GPS folder]
-    conda env create -f environment.yml python=2.7
+    conda create -f environment.yml python=2.7
 
 then GPS can be started by typing the following commands in terminal
 
