@@ -6,17 +6,21 @@ To improve the accuracy of reduced mechanisms, GPS considers all-generation rela
 
 This algorithm is developed by Prof. Wenting Sun's group at Georgia Tech [[link](http://sun.gatech.edu/)]
 
+## How to install
+This repo is developed with Python 2.7 and based on many packages. The easiest way is to install them with the [Anaconda](https://www.anaconda.com/distribution/) and [Pip](https://pip.pypa.io/en/stable/installing/). Please use the following commands in Anaconda Prompt step-by-step.
+
+    conda create -n gps python=2.7
+    conda activate gps
+    conda install -c cantera cantera
+    conda install -c anaconda pyqt=4.11.4
+    conda install -c anaconda networkx=1.10
+    pip install matplotlib, scipy
+
 ## How to use
-
-This repo is developed with Python 2.7 and based on many packages. The easiest way is to install them with the [Anaconda](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment file, [environment.yml](https://github.com/golsun/GPS/blob/master/environment.yml):
-
-    cd [the path of GPS folder]
-    conda create -f environment.yml python=2.7
-
 then GPS can be started by typing the following commands in terminal
 
+    conda activate gps
     python GPS.py
-
 
 for more detailed tutorial, please see [Tutorial_v1.0.0.pdf](https://github.com/golsun/GPS/blob/master/Tutorial_v1.0.0.pdf)
 
