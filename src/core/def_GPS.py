@@ -123,7 +123,10 @@ def GPS_algo(soln, flux_graph, source, target, path_save=None, \
     if normal is 'source':
         norm_deg = out_deg[source]
     elif normal is 'max':
-        norm_deg = max([max(out_deg.values()), max(in_deg.values())])
+        try:
+            norm_deg = max([max(out_deg.values()), max(in_deg.values())])
+        except:
+            return {'species':dict()}
 
     score = {node: max(in_deg[node], out_deg[node]) / norm_deg for node in in_deg.keys()}
 
@@ -163,7 +166,7 @@ def GPS_algo(soln, flux_graph, source, target, path_save=None, \
                     p1 = nx.shortest_path(flux_graph, hub, target, weight='1/flux')
                     pp0 = [p0]
                     pp1 = [p1]
-                except nx.NetworkXNoPath:
+                except:# nx.NetworkXNoPath:
                     print 'no path found for: '+str(source)+' --> '+str(hub)+' --> '+str(target)
                     pass
 

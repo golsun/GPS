@@ -602,10 +602,12 @@ def run_GPS(parent, progress):
 												dv_pnt = 1.0 * dv_raw / len(T)
 												for i_pnt in range(len(T)):
 
+													"""
 													if 'active reactions' in raw.keys():
 														if raw['active reactions'][i_pnt] == 0:
 															print 'skipped pnt '+str(i_pnt)+' as no active reaction'
 															continue
+															"""
 
 													if flag == False:
 														if abs(T[i_pnt]-T[0])>min_dT:
