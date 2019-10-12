@@ -358,13 +358,15 @@ def run_graph(parent, progress, task):
 							dv_pnt = 1.0 * dv_raw / n_pnt
 
 							print 'dir_raw = '+str(dir_raw)
-							print 'n_point = '+str(len(raw['axis0']))
+							print 'n_point = '+str(n_pnt)
 
-							for i_pnt in range(len(raw['axis0'])):
+							for i_pnt in range(n_pnt):
+								"""
 								if 'active reactions' in raw.keys() and len(raw['active reactions'])>0:
 									if raw['active reactions'][i_pnt] == 0:
 										print 'skipped pnt '+str(i_pnt)+' as no active reaction'
 										continue
+										"""
 								
 								for e in traced_list:
 									path_graph = os.path.join(dir_graph, e+'_'+str(i_pnt)+'.json')
@@ -379,7 +381,8 @@ def run_graph(parent, progress, task):
 											path_save=path_graph, overwrite=False, \
 											i0=i_pnt, i1=i_pnt, constV=False)
 									else:
-										print 'already exists '+str(path_graph)
+										if i_pnt % 1e4 == 0 or i_pnt == n_pnt - 1:
+											print 'already exists '+str(path_graph)
 										
 
 								v += dv_pnt
@@ -571,8 +574,7 @@ def run_GPS(parent, progress):
 													reactor, parent.n_digit)
 												
 												if 'DNS' in reactor:
-													raw_name = os.path.join(dir_raw, database['case'][0])
-
+													raw_name += '/' + database['case'][0]
 
 												dir_how = os.path.join(dir_sk,raw_name.replace('raw','how'))
 
@@ -825,7 +827,7 @@ def run_GPSA(parent, progress):
 				iso = None
 				gamma_list = [None]
 
-
+			n_GP = 0
 			for K in K_list:
 				for beta in beta_list:
 					for alpha in alpha_list:
@@ -837,6 +839,7 @@ def run_GPSA(parent, progress):
 						    	d=parent.n_digit, gamma=gamma)
 
 							dir_how = os.path.join(dir_sk,'how')
+							print('[GPSA] checking dir_how: '+str(dir_how))
 							if not os.path.exists(dir_how):
 								continue
 
@@ -849,6 +852,9 @@ def run_GPSA(parent, progress):
 									for fat in os.listdir(dir_reactor):
 										dir_fat = os.path.join(dir_reactor, fat)
 										if ('phi' not in fat) or (not os.path.isdir(dir_fat)): continue	
+										if reactor == 'DNS':
+											dir_fat = dir_fat + '/' + os.listdir(dir_fat)[0]
+										print('[GPSA] checking dir_fat: '+str(dir_fat))
 										for file in os.listdir(dir_fat):
 											if 'graph' not in file: continue
 											file_GP = os.path.join(dir_fat,file)
@@ -867,9 +873,8 @@ def run_GPSA(parent, progress):
 													GP_dict['traced'] = traced
 													parent.project[GP_traced][GP_name] = GP_dict
 
-													progress.set_info('added '+traced+'-traced global pathway: '+str(GP_name))
-	
-
+													print('added '+traced+'-traced global pathway: '+str(GP_name))
+													
 	print 'run_GPSA: here1'
 	# find all GP ==============================
 	GP_list = []

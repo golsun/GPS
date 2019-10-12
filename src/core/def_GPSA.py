@@ -83,7 +83,8 @@ def	find_GPSA(dir_raw, GP_dict, soln, dnR, fuel_comp, n_break=0):
 	if not os.path.exists(dir_save):
 		os.makedirs(dir_save)
 	path_save = os.path.join(dir_save, shorten_GP_name(GP_name)+'.json')
-
+	print('[GPSA] to be saved: '+str(path_save))
+	
 	# =====================================
 	# if previously computed, return False
 

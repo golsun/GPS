@@ -108,7 +108,7 @@ def GPS_algo(soln, flux_graph, source, target, path_save=None, \
     if not, then compute, save, and return
     -------------------------------- """
 
-    print 'performing GPS, source = '+str(source)+', target = '+str(target)
+    print 'performing GPS'+str(path_save)
 
     arrow = ' --> '
     global_path = {}
