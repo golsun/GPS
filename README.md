@@ -25,7 +25,10 @@ then GPS can be started by typing the following commands in terminal
     conda activate gps
     python GPS.py
 
-for more detailed tutorial, please see [Tutorial_v1.0.0.pdf](https://github.com/golsun/GPS/blob/master/Tutorial_v1.0.0.pdf)
+for more detailed tutorial, please see [Tutorial_v1.0.0.pdf](https://github.com/golsun/GPS/blob/master/Tutorial_v1.0.0.pdf). The following interface should show up:
+
+![](https://github.com/golsun/GPS/blob/master/ui/ui_main.PNG)
+
 
 ## How to cite
 * X. Gao, S. Yang, W. Sun, "A global pathway selection algorithm for the reduction of detailed chemical kinetic mechanisms", **Combustion and Flame**, 167 (2016) 238–247 [[link](https://www.sciencedirect.com/science/article/pii/S0010218016000638)]
